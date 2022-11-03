@@ -1,0 +1,40 @@
+name: Mirror Request / 镜像请求
+description: Proposing new mirror / 提议设立新的镜像
+title: "[镜像请求] "
+labels: ["Mirror Request"]
+body:
+  - type: markdown
+    id: preamble
+    attributes:
+      value: |
+        如果你希望吉林大学开源镜像站增设某开源项目的镜像，请填写以下表单。
+        If you want an open-source project to be mirrored by JLU Mirrors, please fill in the form below.
+  - type: checkboxes
+    id: prerequisites
+    attributes:
+      label: 先决条件 / Prerequisites
+      options:
+        - label: |
+            该项目未在其他被标为 wontfix 的 [issues](https://github.com/JLULUG/issues) 中讨论过。
+            No previous issues with "wontfix" label have discussed about mirroring this project.
+          required: true
+  - type: textarea
+    id: intro
+    attributes:
+      label: 项目简介 / Introduction
+    validations:
+      required: true
+  - type: textarea
+    id: upstream
+    attributes:
+      label: 上游地址与镜像方法 / Upstream & Method
+    validations:
+      required: true
+  - type: input
+    id: size
+    attributes:
+      label: 镜像大小 / Size
+  - type: textarea
+    id: notes
+    attributes:
+      label: 备注 / Notes
