@@ -1,7 +1,7 @@
 name: Mirror Request / 镜像请求
 description: Proposing new mirror / 提议设立新的镜像
 title: "[镜像请求] "
-labels: ["Mirror Request"]
+labels: ["mirror request"]
 body:
   - type: markdown
     id: preamble

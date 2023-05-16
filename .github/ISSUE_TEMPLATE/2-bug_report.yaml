@@ -1,6 +1,6 @@
 name: Report Problem / 故障报告
 description: Report a problem with JLU Mirrors / 报告使用镜像站时出现的问题
-labels: ["Problem Report"]
+labels: ["problem report"]
 body:
   - type: markdown
     id: preamble
