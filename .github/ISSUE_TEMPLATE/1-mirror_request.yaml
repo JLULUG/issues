@@ -7,13 +7,17 @@ body:
     id: preamble
     attributes:
       value: |
-        如果你希望吉林大学开源镜像站增设某开源项目的镜像，请填写以下表单。
-        If you want an open-source project to be mirrored by JLU Mirrors, please fill in the form below.
+        如果你希望吉林大学开源镜像站增设某开源项目的镜像，请在上方标题填写项目名，并填写以下表单。
+        If you want an open-source project to be mirrored by JLU Mirrors, please enter the project name above as title, and fill in the form below.
   - type: checkboxes
     id: prerequisites
     attributes:
       label: 先决条件 / Prerequisites
       options:
+        - label: |
+            【重要！】我已仔细阅读过[请求新镜像须知](https://github.com/JLULUG/issues/issues/10)
+            I've carefully read the [Notes on Mirror Requests](https://github.com/JLULUG/issues/issues/10).
+          required: true
         - label: |
             该项目未在其他被标为 wontfix 的 [issues](https://github.com/JLULUG/issues) 中讨论过。
             No previous issues with "wontfix" label have discussed about mirroring this project.
