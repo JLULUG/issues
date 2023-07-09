@@ -22,6 +22,18 @@ body:
             该项目未在其他被标为 wontfix 的 [issues](https://github.com/JLULUG/issues) 中讨论过。
             No previous issues with "wontfix" label have discussed about mirroring this project.
           required: true
+  - type: dropdown
+    id: identity
+    attributes:
+      label: 申请人身份 / Identity
+      multiple: false
+      options:
+        - 镜像站用户 / Mirrors User
+        - 项目维护者 / Project Maintainer
+        - 吉林大学学生 / Student of JLU
+        - 吉林大学教职工 / Faculty of JLU
+    validations:
+      required: true
   - type: textarea
     id: intro
     attributes:
